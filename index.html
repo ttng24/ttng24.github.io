@@ -1,0 +1,153 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <title>My Profile</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="./css/fontawesome-all.min.css" rel="stylesheet">
+    <style>
+        :root {
+            --bg-color: #121212;
+            --card-color: #1e1e1e;
+            --text-color: #ffffff;
+            --accent-color: #3498db;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'Arial', sans-serif;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            line-height: 1.6;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .container {
+            width: 100%;
+            max-width: 500px;
+            background-color: var(--card-color);
+            border-radius: 16px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.3);
+            overflow: hidden;
+            text-align: center;
+            padding: 30px 20px;
+        }
+
+        .profile {
+            margin-bottom: 30px;
+        }
+
+        .profile-image {
+            width: 120px;
+            height: 120px;
+            border-radius: 50%;
+            object-fit: cover;
+            border: 4px solid var(--accent-color);
+            margin-bottom: 15px;
+        }
+
+        .profile-name {
+            font-size: 24px;
+            font-weight: bold;
+            margin-bottom: 10px;
+        }
+
+        .profile-bio {
+            color: #aaa;
+            margin-bottom: 20px;
+        }
+
+        .links {
+            display: flex;
+            flex-direction: column;
+            gap: 15px;
+        }
+
+        .link-btn {
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            width: 100%;
+            padding: 15px;
+            background-color: var(--bg-color);
+            color: var(--text-color);
+            text-decoration: none;
+            border-radius: 10px;
+            transition: transform 0.3s, background-color 0.3s;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .link-btn:hover {
+            transform: scale(1.05);
+            background-color: rgba(255,255,255,0.1);
+        }
+
+        .link-btn .icon {
+            margin-right: 15px;
+            font-size: 20px;
+        }
+
+        .social-links {
+            display: flex;
+            justify-content: center;
+            gap: 20px;
+            margin-top: 30px;
+        }
+
+        .social-link {
+            color: #aaa;
+            font-size: 24px;
+            transition: color 0.3s;
+        }
+
+        .social-link:hover {
+            color: var(--accent-color);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="profile">
+            <img src="./images/logobk.jpg" alt="Profile" class="profile-image">
+            <div class="profile-name">Thien Xanh</div>
+            <div class="profile-bio">Nhà phát triển | Creator | Đam mê công nghệ</div>
+        </div>
+
+        <div class="links">
+            <a href="https://google.com" class="link-btn">
+                <i class="icon fab fa-youtube"></i>
+                YouTube Channel
+            </a>
+            <a href="#" class="link-btn">
+                <i class="icon fab fa-instagram"></i>
+                Instagram
+            </a>
+            <a href="#" class="link-btn">
+                <i class="icon fab fa-github"></i>
+                GitHub Profile
+            </a>
+            <a href="#" class="link-btn">
+                <i class="icon fas fa-blog"></i>
+                Blog Cá Nhân
+            </a>
+        </div>
+
+        <div class="social-links">
+            <a href="#" class="social-link"><i class="fab fa-facebook"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-linkedin"></i></a>
+            <a href="#" class="social-link"><i class="fab fa-tiktok"></i></a>
+        </div>
+    </div>
+</body>
+</html>
